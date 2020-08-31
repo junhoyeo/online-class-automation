@@ -1,5 +1,7 @@
 # Online Class Automation
 
+<img src="./docs/images/preview.png" width="512px">
+
 > ♥️ Special thanks to [@uhmseohun](https://github.com/uhmseohun), [@Changemin](https://github.com/Changemin), [@HyeokjinKang](https://github.com/HyeokjinKang)
 
 Due to COVID-19, all schools in South Korea are doing their classes online, which means **students has to find their own classrooms** before each class start.<br />
