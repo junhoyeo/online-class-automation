@@ -67,7 +67,8 @@
   {
     "name": "HR",
     "teacher": "몽키 D. 루피",
-    "code": 7864104388
+    "code": 7864104388,
+    "homeroom": true
   },
   {
     "name": "진로 - 담임",
