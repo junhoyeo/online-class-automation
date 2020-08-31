@@ -42,7 +42,7 @@ def print_classroom(classroom: dict) -> None:
     table.add_row(
       period_names[classroom_index],
       classroom['name'],
-      classroom['teacher'],
+      classroom['teacher'] or '-',
     )
 
   console.print(table)
