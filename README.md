@@ -1,6 +1,8 @@
 # Online Class Automation
 
-<img src="./docs/images/preview.png" width="512px">
+<a href="https://github.com/junhoyeo/online-class-automation">
+  <img src="./docs/images/preview.png" width="512px">
+</a>
 
 > ♥️ Special thanks to [@uhmseohun](https://github.com/uhmseohun), [@Changemin](https://github.com/Changemin), [@HyeokjinKang](https://github.com/HyeokjinKang)
 
