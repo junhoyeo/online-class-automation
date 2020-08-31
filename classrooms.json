@@ -67,7 +67,8 @@
   {
     "name": "HR",
     "teacher": "이재민",
-    "code": 7864104388
+    "code": 7864104388,
+    "homeroom": true
   },
   {
     "name": "진로 - 담임",
