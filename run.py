@@ -1,5 +1,6 @@
-import datetime
+import os
 import json
+import datetime
 
 import schedule
 import webbrowser
@@ -12,6 +13,8 @@ def load_json_file(filename: str) -> dict:
   return data
 
 console = Console()
+
+os.system('cd ./self-check-automation && yarn start')
 
 timetable = load_json_file('./timetable.json')
 classrooms = load_json_file('./classrooms.json')
