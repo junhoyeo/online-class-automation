@@ -24,14 +24,12 @@ def print_classroom(classroom: dict) -> None:
   table.add_column('시간', style='dim', width=5)
   table.add_column('과목명', style='bold')
   table.add_column('선생님', justify='right')
-  table.add_column('브라우저 접속 링크', style='dim')
 
   for classroom_index, classroom in enumerate(timetable_for_today):
     table.add_row(
       f'{classroom_index + 1}교시',
       classroom['name'],
       classroom['teacher'],
-      f"https://us02web.zoom.us/j/{classroom['code']}?pwd=dimigo",
     )
 
   console.print(table)
