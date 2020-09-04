@@ -19,7 +19,7 @@ git clone https://github.com/junhoyeo/online-class-automation
 cd online-class-automation
 
 # 파이썬 의존성 설치 후 스크립트 실행
-pip3 install schedule rich
+pip3 install schedule rich psutil
 python3 run.py
 
 # 오늘의 시간표를 출력한 뒤 다음 수업의 시작 시간을 기다립니다.
