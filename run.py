@@ -7,6 +7,8 @@ import webbrowser
 from rich.console import Console
 from rich.table import Column, Table
 
+from process import kill_zoom_process
+
 def load_json_file(filename: str) -> dict:
   with open(filename) as file_stream:
     data = json.load(file_stream)
@@ -38,7 +40,10 @@ def print_classroom(classroom: dict) -> None:
   table.add_column('선생님', justify='right')
 
   for classroom_index, classroom in enumerate(timetable_for_today):
-    classroom['start_time'] = period_list[classroom_index]
+    start_time, end_time = period_list[classroom_index]
+    classroom['start_time'] = start_time
+    classroom['end_time'] = end_time
+
     table.add_row(
       period_names[classroom_index],
       classroom['name'],
@@ -52,6 +57,12 @@ def open_classroom(classroom: dict) -> None:
   code = classroom['code']
   webbrowser.open_new_tab(f'zoommtg://zoom.us/join?action=join&pwd=dimigo&confno={code}')
   console.print(f'✔ {name} 수업 접속 완료', style='dim')
+
+def close_classroom() -> None:
+  if kill_zoom_process():
+    console.print(f'✘ 수업 나가기 완료', style='dim')
+  else:
+    console.print(f'✘ 수업 나가기 실패', style='dim')
 
 weekday = datetime.datetime.today().weekday()
 timetable_for_today = [
@@ -67,6 +78,7 @@ print_classroom(timetable_for_today)
 
 for classroom in timetable_for_today:
   schedule.every().day.at(classroom['start_time']).do(open_classroom, classroom=classroom)
+  schedule.every().day.at(classroom['end_time']).do(close_classroom)
 
 console.print('수업이 끝나길 기다리는 중...', style='dim')
 while True:
