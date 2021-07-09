@@ -1,0 +1,6 @@
+colorama==0.4.4
+commonmark==0.9.1
+psutil==5.8.0
+Pygments==2.9.0
+rich==10.5.0
+schedule==1.1.0
