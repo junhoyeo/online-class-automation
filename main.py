@@ -55,7 +55,8 @@ def print_classroom(classroom: dict) -> None:
 def open_classroom(classroom: dict) -> None:
   name = classroom['name']
   code = classroom['code']
-  webbrowser.open_new_tab(f'zoommtg://zoom.us/join?action=join&pwd=dimigo&confno={code}')
+  password = classroom['password']
+  webbrowser.open_new_tab(f'zoommtg://zoom.us/join?action=join&pwd={password}&confno={code}')
   console.print(f'✔ {name} 수업 접속 완료', style='dim')
 
 def close_classroom() -> None:
