@@ -2,78 +2,93 @@
   {
     "name": "화학 I",
     "teacher": "샹크스",
-    "code": 4361766687
+    "code": 4361766687,
+    "password": "dimigo"
   },
   {
     "name": "운동과 건강",
     "teacher": "몽키 D. 루피",
-    "code": 7864104388
+    "code": 7864104388,
+    "password": "dimigo"
   },
   {
     "name": "수학 II",
     "teacher": "롤로노아 조로",
-    "code": 7965443330
+    "code": 7965443330,
+    "password": "dimigo"
   },
   {
     "name": "정보보호 관리",
     "teacher": "나미",
-    "code": 5977904321
+    "code": 5977904321,
+    "password": "dimigo"
   },
   {
     "name": "성공적인 직업생활",
     "teacher": "우솝",
-    "code": 7223454774
+    "code": 7223454774,
+    "password": "dimigo"
   },
   {
     "name": "응용프로그래밍 화면구현",
     "teacher": "상디",
-    "code": 3650046422
+    "code": 3650046422,
+    "password": "dimigo"
   },
   {
     "name": "중국어 I",
     "teacher": "정지훈",
-    "code": 7722593481
+    "code": 7722593481,
+    "password": "dimigo"
   },
   {
     "name": "공업수학",
     "teacher": "류명희",
-    "code": 6838770867
+    "code": 6838770867,
+    "password": "dimigo"
   },
   {
     "name": "진로",
     "teacher": "박경수",
-    "code": 3955689232
+    "code": 3955689232,
+    "password": "dimigo"
   },
   {
     "name": "영어 I",
     "teacher": "이경은",
-    "code": 7126847915
+    "code": 7126847915,
+    "password": "dimigo"
   },
   {
     "name": "정보통신",
     "teacher": "박성수",
-    "code": 3335559622
+    "code": 3335559622,
+    "password": "dimigo"
   },
   {
     "name": "자료구조",
     "teacher": "상디",
-    "code": 3650046422
+    "code": 3650046422,
+    "password": "dimigo"
   },
   {
     "name": "문학",
     "teacher": "토니토니 쵸파",
-    "code": 8134411742
+    "code": 8134411742,
+    "password": "dimigo"
   },
   {
     "name": "HR",
     "teacher": "몽키 D. 루피",
     "code": 7864104388,
-    "homeroom": true
+    "homeroom": true,
+    "password": "dimigo"
   },
   {
     "name": "진로 - 담임",
     "teacher": "몽키 D. 루피",
-    "code": 7864104388
+    "code": 7864104388,
+    "password": "dimigo"
   },
   {
     "name": "동아리",
